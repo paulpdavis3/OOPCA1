@@ -5,7 +5,7 @@ void setup()
   fullScreen();
   background(55);
   loadStars();
-  window = new Window(width/2,height/2);
+  window = new Window();
 }
 
 void loadStars()

@@ -19,7 +19,8 @@ class Star
     
     for(count = 0; count < 21; count++)
     {
-         fill(255);
+         float mBrightness = map(brightness,1,10,1,255);
+         fill(255,mBrightness);
          noStroke();
          ellipse(((width/2)-100)+xPos,(height/2)-100+yPos,size,size);
     }

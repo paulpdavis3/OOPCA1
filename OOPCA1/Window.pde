@@ -3,18 +3,11 @@ class Window
   int x;
   int y;
 
-  Window(int x, int y)
-  {
-    this.x = x;
-    this.y = y;
-  }
-
   void display()
   {
-    rectMode(CENTER);
     fill(0);
     strokeWeight(3);
     stroke(255, 255, 0);
-    rect(x, y, 200, 200, 10);
+  rect(20,20,width-40,height/2,20);
   }
 }
