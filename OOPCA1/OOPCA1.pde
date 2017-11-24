@@ -23,4 +23,8 @@ ArrayList<Star> stars = new ArrayList<Star>();
 void draw()
 {
   window.display();
+  for(Star star : stars)
+  {
+    star.display();
+  }
 }
