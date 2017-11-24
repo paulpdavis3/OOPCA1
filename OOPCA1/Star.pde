@@ -13,6 +13,8 @@ class Star
     brightness = row.getFloat("brightness");
   }
 
+PShape s;
+
   void display()
   {
     float count;
@@ -23,7 +25,22 @@ class Star
       strokeWeight(size);
       float mxPos = map(xPos,1,200,20,width-40);
       float myPos = map(yPos,1,200,20,height/2);
-      point(mxPos, myPos);
+      
+        s = createShape();
+        s.beginShape();
+        s.fill(200,brightness);
+        s.noStroke();
+        s.vertex(0, 0);
+        s.vertex(5, 20);
+        s.vertex(25, 25);
+        s.vertex(5, 30);
+        s.vertex(0, 50);
+        s.vertex(-5,30);
+        s.vertex(-25,25);
+        s.vertex(-5,20);
+        s.endShape(CLOSE);
+      
+      shape(s,mxPos, myPos);
     }
   }
 }
