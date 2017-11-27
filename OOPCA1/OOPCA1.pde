@@ -1,5 +1,6 @@
 Window window;
 Shutter shutter;
+Clock clock;
 
 void setup()
 {
@@ -9,6 +10,7 @@ void setup()
   loadStars();
   window = new Window();
   shutter = new Shutter();
+  clock = new Clock();
 }
 
 void loadStars()
@@ -34,4 +36,5 @@ void draw()
   
   shutter.display();
   shutter.Bdisplay();
+  clock.display();
 }
