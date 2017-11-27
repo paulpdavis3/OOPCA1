@@ -1,4 +1,5 @@
 Window window;
+Shutter shutter;
 
 void setup()
 {
@@ -7,6 +8,7 @@ void setup()
   background(55);
   loadStars();
   window = new Window();
+  shutter = new Shutter();
 }
 
 void loadStars()
@@ -24,8 +26,12 @@ ArrayList<Star> stars = new ArrayList<Star>();
 void draw()
 {
   window.display();
+  
   for(Star star : stars)
   {
     star.display();
   }
+  
+  shutter.display();
+  shutter.Bdisplay();
 }
