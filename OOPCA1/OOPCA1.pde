@@ -3,6 +3,7 @@ Window window;
 void setup()
 {
   fullScreen();
+  //size(1080,720);
   background(55);
   loadStars();
   window = new Window();
