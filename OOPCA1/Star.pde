@@ -19,7 +19,7 @@ class Star
   {
     float count;
 
-    for (count = 0; count < 21; count++)
+    for (count = 0; count < 50; count++)
     {
       stroke(255, brightness);
       strokeWeight(size);
