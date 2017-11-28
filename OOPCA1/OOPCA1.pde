@@ -8,8 +8,8 @@ Drive drive;
 
 void setup()
 {
-  //fullScreen();
-  size(1080,720);
+  fullScreen();
+  //size(1080,720);
   //size(600,500);
   background(55);
   loadStars();
@@ -37,12 +37,6 @@ ArrayList<Star> stars = new ArrayList<Star>();
 void draw()
 {
   window.display();
-
-  for (Star star : stars)
-  {
-    star.display();
-  }
-
   shutter.display();
   shutter.Bdisplay();
   clock.display();
@@ -50,4 +44,8 @@ void draw()
   map.display();
   radar.display();
   drive.display();
+  for (Star star : stars)
+  {
+    star.display();
+  }
 }
