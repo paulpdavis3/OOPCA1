@@ -3,6 +3,8 @@ Shutter shutter;
 Clock clock;
 CustomSliders customsliders;
 Map map;
+Radar radar;
+Drive drive;
 
 void setup()
 {
@@ -15,6 +17,8 @@ void setup()
   clock = new Clock();
   customsliders = new CustomSliders();
   map = new Map();
+  radar = new Radar();
+  drive = new Drive();
 }
 
 void loadStars()
@@ -43,4 +47,6 @@ void draw()
   clock.display();
   customsliders.display();
   map.display();
+  radar.display();
+  drive.display();
 }
