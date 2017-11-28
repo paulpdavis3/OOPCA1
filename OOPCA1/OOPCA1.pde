@@ -2,6 +2,7 @@ Window window;
 Shutter shutter;
 Clock clock;
 CustomSliders customsliders;
+Map map;
 
 void setup()
 {
@@ -13,6 +14,7 @@ void setup()
   shutter = new Shutter();
   clock = new Clock();
   customsliders = new CustomSliders();
+  map = new Map();
 }
 
 void loadStars()
@@ -40,4 +42,5 @@ void draw()
   shutter.Bdisplay();
   clock.display();
   customsliders.display();
+  map.display();
 }
