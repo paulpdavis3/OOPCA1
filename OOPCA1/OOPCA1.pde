@@ -37,7 +37,6 @@ ArrayList<Star> stars = new ArrayList<Star>();
 void draw()
 {
   window.display();
-  shutter.display();
   shutter.Bdisplay();
   clock.display();
   customsliders.display();
@@ -48,4 +47,9 @@ void draw()
   {
     star.display();
   }
+}
+
+void mousePressed()
+{
+  shutter.display(mouseX,mouseY);
 }
