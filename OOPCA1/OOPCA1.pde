@@ -8,8 +8,9 @@ Drive drive;
 
 void setup()
 {
-  fullScreen();
-  //size(1080,720);
+  //fullScreen();
+  size(1080,720);
+  //size(600,500);
   background(55);
   loadStars();
   window = new Window();
