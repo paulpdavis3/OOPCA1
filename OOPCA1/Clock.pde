@@ -14,16 +14,16 @@ class Clock
      rectMode(CORNER);
      rect(20,height-10,(width/8)+20,-((height/2)-40)/2);
   
-    int radius = min((20)+((width/8)+20), (height-10)+(-((height/2)-40)/2)) / 2;
+    float radius = min(20+((width/8)+20)/2, height-10+(-(((height/2)-40)/2))/2) / 1.5;
     secondsRadius = radius * 0.72;
     minutesRadius = radius * 0.60;
     hoursRadius = radius * 0.50;
     clockDiameter = radius * 1.8;
     
-    cx = ((20)+((width/8)+20))/2;
-    cy = ((height-10)+(-((height/2)-40)/2))/2;
+    cx = 20+((width/8)+20)/2;
+    cy = height-10+(-(((height/2)-40)/2))/2;
     
-    fill(80);
+  fill(80);
   noStroke();
   ellipse(cx, cy, clockDiameter, clockDiameter);
   
