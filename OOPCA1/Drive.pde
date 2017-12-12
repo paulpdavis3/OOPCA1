@@ -16,12 +16,10 @@ class Drive
     rectMode(CORNER);
     rect(width-20,(height)-10,((-width/8)*2)+20,-((height/2)-40)/2);
     
-    HandleStart = ((-((height/2)-40)/2))/2;
-    Hx = (((-width/8)*2)+20)/2;
-    Hy = ((-((height/2)-40)/2))/2;  
-    rectMode(RADIUS);
-    stroke(0);
-    fill(255);
-    rect(Hx,Hy,HandleSize,HandleSize/2);
+    Hx = (width-20)+(((-width/8)*2)+20)/2;
+    HandleStart = ((height)-10)+(-((height/2)-40)/2)/2;
+    Hy = ((height)-10)+(-((height/2)-40)/2)/2;
+   
+   rect(Hx,Hy,HandleSize,HandleSize/2);
   }
 }
