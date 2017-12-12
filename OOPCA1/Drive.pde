@@ -22,6 +22,6 @@ class Drive
     rectMode(RADIUS);
     stroke(0);
     fill(255);
-    rect(Hx,Hy,HandleSize,HandleSize/2); 
+    rect(Hx,Hy,HandleSize,HandleSize/2);
   }
 }
