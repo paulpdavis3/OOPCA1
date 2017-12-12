@@ -21,5 +21,29 @@ class Drive
     Hy = ((height)-10)+(-((height/2)-40)/2)/2;
    
    rect(Hx,Hy,HandleSize,HandleSize/2);
+   
+   if(mouseX > Hx-HandleSize && mouseX < Hx+HandleSize && mouseY > Hy-HandleSize && mouseY < Hy+HandleSize )
+  {
+    OverHandle = true;
+    if(!Held)
+    {
+      stroke(255);
+      fill(255);
+    }
+  }
+  else
+  {
+    stroke(255);
+    fill(255);
+    OverHandle=false;
+  }
+  if(Hy >= HandleStart + 100)
+  {
+    Hy = HandleStart+100;
+  }
+  else if(Hy <= HandleStart-100)
+  {
+    Hy = HandleStart-100;
+  }
   }
 }
