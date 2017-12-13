@@ -26,4 +26,6 @@ Works, reads in a csv file with certain attributes for the stars on the screen
 Window:
 Works, just displays the window on the screen.
 
-One thing that is fully working is that the whole display should be completely dynamic, regardless of screen size.
+Some things that is fully working is that the whole display should be completely dynamic, regardless of screen size.
+
+The star class also creates a custom shaped star that i created using the shape fuction
